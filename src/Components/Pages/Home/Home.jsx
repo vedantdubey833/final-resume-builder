@@ -1,0 +1,22 @@
+import { Link } from "react-router-dom";
+import styles from "./Home.module.css";
+
+const Home = () => {
+    return (
+        
+        <div className={styles.wrapper+" roboto mid"}>
+            <div className={styles.logo_rec} />
+            <div className={styles.content+" mid"} >
+                <div className={styles.tagline}>OK, let's build a perfect resume!</div>
+                <div className={styles.que}></div>
+                <Link to="/details" className={styles.button} >Fill Details</Link>
+                <Link to="/templates" className={styles.button} >Choose Templates</Link>
+            </div>
+            
+            <a href="" target="_drake" style={{ marginTop: "30px"}}><ion-icon color="light" size="large" name="logo-linkedin"></ion-icon></a>
+
+        </div>
+    )
+}
+
+export default Home
